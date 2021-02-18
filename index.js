@@ -4,8 +4,8 @@ const cors = require("cors")
 const welcomeRouter = require("./welcome/welcome-router")
 const shoutsRouter = require("./shouts/shouts-router")
 
-const server = express()
-const port = 4000
+const server = express();
+const port = process.env.PORT || 5000
 
 server.use(express.json())
 server.use(helmet())
